@@ -1,0 +1,446 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.page {
+    background-color: #000000;
+    margin: 0;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 40px 96px;
+}
+.logo{
+    margin: 0;
+    color:#D23166;
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.navigation-list {
+    text-decoration: none;
+    color:#FFFFFF;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 95px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+
+}
+    .navigation-link {
+          flex: 0 0 auto;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: row;
+    }
+
+.navigation-item {
+    flex: 0 0 auto;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: row;
+    
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+}
+.social-icon {
+    display: flex;
+    width: 38px;
+    height: 36px;
+    flex-direction: row;
+}
+.container{
+    width: 1216px;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0 96px;
+}
+
+.hero-kicker {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-family: 'Alexandria', sans-serif;
+    margin: 0 0 16px;
+    line-height: 0.94em;
+    letter-spacing: -0.07em;
+    font-size: 57px;
+    opacity: 0.9;
+    padding: 0;
+    display: block;
+}
+
+.accent-text {
+    color: #D23166;
+}
+
+.hero-image-frame {
+    flex-shrink: 0;
+    width: 588px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    height: 588px;
+     width: 588px;
+}
+
+.hero-description {
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    opacity:0.6;
+}
+.hero-button {
+    background-color: #D23166;
+    color: #FFFFFF;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 165px;
+    height: 49px;
+    margin: 48px 422px 125px 0px;
+}
+.about-text {
+    color: #FFFFFF;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: -0.07em;
+    margin: 0;
+    padding: 129px 0 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    
+}
+.about-text-muted {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+   
+    
+
+
+.about-image-milk {
+    background-image: url('../images/milk.png');
+    display: block;
+    padding: 230px 1070px 65px 33px; 
+    position: absolute;
+    z-index: 1;
+}
+
+.about-image-pistachio {
+    background-image: url('../images/pistachio.png');
+    display: block;
+   padding: 110px 120px 220px 990px; 
+    position: absolute;
+    z-index: 1;
+}
+
+.about-image-strawberry {
+    background-image: url('../images/strawberry.png');
+    display: block;
+    padding: 370px 630px 60px 625px; 
+    position: absolute;
+    z-index: 1;
+}
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0 96px;
+}
+.product-heading {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 0.94em;
+    letter-spacing: -0.07em;
+    margin: 0;
+    
+   
+}
+.product-card-title {
+    color: #FFFFFF;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 700;
+    line-height: 1em;
+    font-size: 26px;
+}
+.product-card {
+    
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    
+    
+   
+}
+
+/* Layout and responsive overrides */
+.page {
+    width: auto;
+    min-width: 320px;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    width: min(1216px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.header {
+    padding: 28px 0;
+}
+
+.header > .container {
+    display: flex;
+    gap: 32px;
+}
+
+.logo {
+    display: block;
+    flex: 0 0 auto;
+    width: 96px;
+    height: auto;
+}
+
+.main-navigation {
+    margin-inline: auto;
+}
+
+.navigation-list {
+    gap: clamp(16px, 4vw, 64px);
+}
+
+.social-links {
+    flex: 0 0 auto;
+}
+
+.social-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.hero-content {
+    width: min(1216px, calc(100% - 48px));
+    margin: 32px auto 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(24px, 5vw, 72px);
+}
+
+.hero-content > .container {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.hero-title {
+    font-size: clamp(38px, 4.4vw, 64px);
+}
+
+.hero-description {
+    max-width: 520px;
+}
+
+.hero-image-frame {
+    width: 100%;
+    max-width: 588px;
+    min-width: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-button {
+    margin: 32px 0 48px;
+}
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 48px;
+}
+
+.about-section > .container {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 400px;
+    padding-block: 64px;
+}
+
+.about-text {
+    width: min(100%, 850px);
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4.2vw, 54px);
+    line-height: 1.05;
+}
+
+.about-section > .container > .about-image {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: clamp(64px, 10vw, 120px);
+    height: auto;
+    padding: 0;
+    pointer-events: none;
+}
+
+.about-section > .container .about-text {
+    position: relative;
+    z-index: 2;
+}
+
+.about-image-milk {
+    top: 24px;
+    left: 2%;
+}
+
+.about-image-pistachio {
+    top: 32px;
+    right: 2%;
+}
+
+.about-image-strawberry {
+    right: 15%;
+    bottom: 12px;
+}
+
+.product-section {
+    padding: 48px 0 96px;
+}
+
+.product-section > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.product-heading {
+    font-size: clamp(36px, 4.5vw, 56px);
+}
+
+.product-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 30px;
+    border-radius: 12px;
+    background: #171717;
+}
+
+.product-card-image {
+    display: block;
+    width:297;
+border-radius: 20px;
+    height: 274;
+    border-radius: 8px;
+}
+
+.product-card-title{
+    margin: 0;
+    font-family: 'Hind Madurai' sans-serif;
+    font-weight: 700px;
+    letter-spacing: 0.0em;
+    font-size: 26px;
+    color:#FFFFFF
+
+}
+.product-card-description {
+    margin: 0;
+}
+
+.product-price {
+    max-width: 100%;
+}
+
+.body{
+    min-width: 0;
+}
+.svg-ul{
+    text-decoration: none;
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+@media (max-width: 1216px){}
